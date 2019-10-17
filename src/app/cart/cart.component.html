@@ -1,1 +1,18 @@
-<h1 style="text-align: center; height: 8em;">Add Products to Cart</h1>
+<div class="container-fluid">
+    <div class="row" *ngFor="let a of scart">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+            <img class="img-responsive" src="{{ a.url }}" height="400px" width="300px">
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-7">
+            <h2>{{ a.title }}</h2>
+            <p class="price-tag">Special Price :-</p>
+            <p class="price">₹{{ a.price }}/- (Free Delivery on First Order)</p>
+            <p><span class="span-seller">Seller :</span> <span class="span-seller1">NumBrave</span></p>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+    <h2 class="center">Total Products: {{scart.length}}</h2>
+</div>

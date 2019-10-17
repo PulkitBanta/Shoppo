@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DailyNeedsService } from './daily-needs.service';
 import { HttpClient } from '@angular/common/http';
-
-var x;
 
 @Component({
   selector: 'app-daily-needs',
@@ -11,25 +8,44 @@ var x;
 })
 
 
-
 export class DailyNeedsComponent implements OnInit{
 
-  constructor(private http: HttpClient) {}
-
-  navItems: any;
-
-  ngOnInit(){
-    // this.navItems = this.http.get("http://localhost:3001/assets/main.json")
-    x = this.http.get('http://localhost:3001/assets/main.json');
-    console.log(x)
-    console.log(JSON.stringify(x.source.value))
+  constructor(private http: HttpClient) {
   }
 
-  // showConfig() {
-  //   this.dailyNeedsService.getConfig()
-  //     .subscribe((data: JSON) => {
-  //       title = data.dailyNeeds[0].title;
-  //     });
-  // }
+  data: any;
 
+  ngOnInit(){
+    this.http.get('../../assets/main.json')
+    .subscribe(
+      (data) => {
+        this.data = data;
+      }
+    );
+    }
+
+    sample = {
+      title: null,
+      price: null,
+      url: null,
+      data1: null,
+      data2: null,
+      data3: null,
+    }
+    
+    add(a: any) {
+      let copyCart = cart2.slice();
+      // console.log(copyCart)
+      this.sample.title = a.title;
+      this.sample.price = a.price;
+      this.sample.url   = a.url;
+      this.sample.data1 = a.data1;
+      this.sample.data2 = a.data2;
+      this.sample.data3 = a.data3;
+      
+      copyCart.push(this.sample);
+      cart2 = copyCart
+      // console.log(cart1)
+    }
 }
+export var cart2 = []

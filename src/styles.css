@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-.bg {
-    /* background-image: linear-gradient(to right bottom, #e2edf3, #a7a7a7); */
+body {
+    overflow-x: hidden;
 }

@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ElectronicsComponent } from './electronics/electronics.component';
 import { ClothesComponent } from './clothes/clothes.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
     { path: '', component: ProductBoardComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
     { path: 'clothes', component: ClothesComponent },
-    { path: 'electronics', component: ElectronicsComponent }
+    { path: 'electronics', component: ElectronicsComponent },
+    { path: 'cart', component: CartComponent }
 ];
 
 @NgModule({
@@ -34,4 +36,4 @@ export class AppRoutingModule { }
 export const routingComponents = [MainComponent, ProductComponent,
  ProductCardComponent, ProductBoardComponent, FooterComponent,
  SlideshowComponent, DailyNeedsComponent, HomeFurnitureComponent, 
- LoginComponent, SignupComponent, ElectronicsComponent, ClothesComponent]
+ LoginComponent, SignupComponent, ElectronicsComponent, ClothesComponent, CartComponent]

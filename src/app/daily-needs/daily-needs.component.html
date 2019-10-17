@@ -1,8 +1,8 @@
 <div class="container-fluid">
-    <div class="row" *ngFor="let a of needs">
+    <div class="row" *ngFor="let a of data.dailyNeeds">
         <div class="col-sm-1"></div>
         <div class="col-sm-2">
-            <img src="{{ a.url }}" height="400px" width="300px">
+            <img class="img-responsive" src="{{ a.url }}" height="400px" width="300px">
         </div>
         <div class="col-sm-1"></div>
         <div class="col-sm-7">
@@ -19,7 +19,11 @@
                     <li>{{ a.data3 }}</li>
                 </ul>
             </div>
-            <p><span class="span-seller">Seller :</span> <span class="span-seller1">NumBrave</span> </p>
+            <p><span class="span-seller">Seller :</span> <span class="span-seller1">NumBrave</span></p>
+            <button class="btn btn-success" (click)="add(a)">
+                Add to cart
+            </button>
         </div>
         <div class="col-sm-1"></div>
     </div>
+</div>

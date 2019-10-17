@@ -1,124 +1,29 @@
 <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-2">
-                <img src="../../assets/Bed.jpeg" alt="Bed" height="400px" width="300px">
-            </div>  
-            <div class="col-sm-1"></div> 
-            <div class="col-sm-7">
-                <h2>Flipkart Perfect Homes Rhapsody Engineered Wood King Box Bed  (Finish Color - Wenge)</h2>
-                    <p class="price-tag">Special Price :-</p>
-                    <p class="price">₹15,999/- (Free Delivery on First Order)</p>
-                    <p class="tax">(Inclusive of all Taxes)</p>
-                    <p class="Stock">In Stock</p>
-                    <div>
-                    <p class="Heighlights">Heighlights : </p>
-                    <ul type="disc">
-                        <li>Material Subtype: Particle Board</li>
-                        <li>W x H x D: 192.7 cm x 89 cm x 218 cm (6 ft 3 in x 2 ft 11 in x 7 ft 1 in)</li>
-                        <li>Knock Down - Delivered in non-assembled pieces, installation by service partner</li>
-                        <li>6-way Moisture Protection</li>
-                        <li>100% Termite Resistant</li>
-                    </ul></div>
-                    <p><span class="span-seller">Seller :</span> <span class="span-seller1">OmniTechRetail</span> </p>
-            </div>
-            <div class="col-sm-1"></div> 
+    <div class="row" *ngFor="let a of data.homefurniture">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+            <img class="img-responsive" src="{{ a.url }}" height="400px" width="300px">
         </div>
-        <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2">
-                    <img src="../../assets/Dining-set.jpeg" alt="Dining Set" height="400px" width="300px">
-                </div>  
-                <div class="col-sm-1"></div> 
-                <div class="col-sm-7">
-                    <h2>Balaji Sheesham Wood Solid Wood 2 Seater Dining Set  (Finish Color - Provincial Teak)</h2>
-                        <p class="price-tag">Special Price :-</p>
-                        <p class="price">₹27,190/- (Free Delivery on First Order)</p>
-                        <p class="tax">(Inclusive of all Taxes)</p>
-                        <p class="Stock">In Stock</p>
-                        <div>
-                        <p class="Heighlights">Heighlights : </p>
-                        <ul type="disc">
-                            <li>Table Top Material: Solid Wood</li>
-                            <li>Chair Frame: Solid Wood</li>
-                            <li>Table (W x H x D): 81 cm x 177 cm x 23 cm (2 ft 7 in x 5 ft 9 in x 9 in)</li>
-                            <li>Knock Down - Delivered in non-assembled pieces, installation by service partner</li>
-                        </ul></div>
-                        <p><span class="span-seller">Seller :</span> <span class="span-seller1">OmniTechRetail</span> </p>
-                </div>
-                <div class="col-sm-1"></div> 
+        <div class="col-sm-1"></div>
+        <div class="col-sm-7">
+            <h2>{{ a.title }}</h2>
+            <p class="price-tag">Special Price :-</p>
+            <p class="price">₹{{ a.price }}/- (Free Delivery on First Order)</p>
+            <p class="tax">(Inclusive of all Taxes)</p>
+            <p class="Stock">In Stock</p>
+            <div>
+                <p class="Highlights">Highlights : </p>
+                <ul type="disc">
+                    <li>{{ a.data1 }}</li>
+                    <li>{{ a.data2 }}</li>
+                    <li>{{ a.data3 }}</li>
+                </ul>
             </div>
-            <div class="row">
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2">
-                        <img src="../../assets/Clock.jpeg" alt="Clock" height="350px" width="300px">
-                    </div>  
-                    <div class="col-sm-1"></div> 
-                    <div class="col-sm-7">
-                        <h2>BIG BANG CREATIONS Analog 60 cm X 60 cm Wall Clock  (Blue, With Glass)</h2>
-                            <p class="price-tag">Special Price :-</p>
-                            <p class="price">₹2,969/- (Free Delivery on First Order)</p>
-                            <p class="tax">(Inclusive of all Taxes)</p>
-                            <p class="Stock">In Stock</p>
-                            <div>
-                            <p class="Heighlights">Heighlights : </p>
-                            <ul type="disc">
-                                <li>Size: 60 cm x 60 cm</li>
-                                <li>Mechanism: Quartz</li>
-                                <li>Frame Material: Metal</li>
-                                <li>Clock Type: Analog</li>
-                            </ul></div>
-                            <p><span class="span-seller">Seller :</span> <span class="span-seller1">BigBangCreations</span> </p>
-                    </div>
-                    <div class="col-sm-1"></div> 
-                </div>
-                <div class="row">
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-2">
-                            <img src="../../assets/Curtain.jpeg" alt="Curtain" height="450px" width="300px">
-                        </div>  
-                        <div class="col-sm-1"></div> 
-                        <div class="col-sm-7">
-                            <h2>Home Sizzler 214 cm (7 ft) Polyester Door Curtain (Pack Of 2)  (Floral, Brown)</h2>
-                                <p class="price-tag">Special Price :-</p>
-                                <p class="price">₹449/- (Free Delivery on First Order)</p>
-                                <p class="tax">(Inclusive of all Taxes)</p>
-                                <p style="color:red; font-size:24px;">Sold Out</p>
-                                <div>
-                                <p class="Heighlights">Heighlights : </p>
-                                <ul type="disc">
-                                    <li>Door (115 cm x 214 cm)</li>
-                                    <li>Material: Polyester</li>
-                                    <li>Pack of: 2</li>
-                                    <li>Transparency: Semi Transparent</li>
-                                    <li>Closure Type: Eyelet</li>
-                                </ul></div>
-                                <p><span class="span-seller">Seller :</span> <span class="span-seller1">HomeSizzlerIndia</span> </p>
-                        </div>
-                        <div class="col-sm-1"></div> 
-                    </div>
-                    <div class="row">
-                            <div class="col-sm-1"></div>
-                            <div class="col-sm-2">
-                                <img src="../../assets/Chair.jpeg" alt="Chair" height="350px" width="300px">
-                            </div>  
-                            <div class="col-sm-1"></div> 
-                            <div class="col-sm-7">
-                                <h2>DZYN Furnitures Leatherette Office Executive Chair  (Black, Set of 2)</h2>
-                                    <p class="price-tag">Special Price :-</p>
-                                    <p class="price">₹9,090/- (Free Delivery on First Order)</p>
-                                    <p class="tax">(Inclusive of all Taxes)</p>
-                                    <p class="Stock">In Stock</p>
-                                    <div>
-                                    <p class="Heighlights">Heighlights : </p>
-                                    <ul type="disc">
-                                        <li>Adjustable Seat Height</li>
-                                        <li>W x H: 53 cm x 96 cm (1 ft 8 in x 3 ft 1 in)</li>
-                                        <li>Frame Material: Metal</li>
-                                        <li>Upholstery Type: Cushion</li>
-                                    </ul></div>
-                                    <p><span class="span-seller">Seller :</span> <span class="span-seller1">OmniTechRetail</span> </p>
-                            </div>
-                            <div class="col-sm-1"></div> 
-                        </div>
+            <p><span class="span-seller">Seller :</span> <span class="span-seller1">NumBrave</span></p>
+            <button class="btn btn-success" (click)="add(a)">
+                Add to cart
+            </button>
+        </div>
+        <div class="col-sm-1"></div>
     </div>
+</div>

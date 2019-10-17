@@ -1,53 +1,29 @@
-<div class="w3-content">
-
-    <div class="w3-row w3-margin">
-        <div class="w3-third">
-            <img src="../../assets/electronics1.jpg" style="width:25%;min-height:200px">
+<div class="container-fluid">
+    <div class="row" *ngFor="let a of data.electronics">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+            <img class="img-responsive" src="{{ a.url }}" height="400px" width="300px">
         </div>
-        <div class="w3-twothird w3-container">
-            <h2>Sony MDR-ZX110A</h2>
-            <p>
-                30mm dynamic driver unit for clear sound<br> High energy neodymium magnets deliver powerful sound<br> Slim, folding design for easy portability<br><br>
-                <span class="span-seller">Special Price:1,390.00</span ><br>
-                <span class="save">Deal of the Day:	 549.00</span>
-            </p>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-7">
+            <h2>{{ a.title }}</h2>
+            <p class="price-tag">Special Price :-</p>
+            <p class="price">₹{{ a.price }}/- (Free Delivery on First Order)</p>
+            <p class="tax">(Inclusive of all Taxes)</p>
+            <p class="Stock">In Stock</p>
+            <div>
+                <p class="Highlights">Highlights : </p>
+                <ul type="disc">
+                    <li>{{ a.data1 }}</li>
+                    <li>{{ a.data2 }}</li>
+                    <li>{{ a.data3 }}</li>
+                </ul>
+            </div>
+            <p><span class="span-seller">Seller :</span> <span class="span-seller1">NumBrave</span></p>
+            <button class="btn btn-success" (click)="add(a)">
+                Add to cart
+            </button>
         </div>
+        <div class="col-sm-1"></div>
     </div>
-
-    <div class="w3-row w3-margin">
-        <div class="w3-third">
-            <img src="https://www.amazon.in/boAt-BassHeads-100-Headphones-Black/dp/B071Z8M4KX/ref=sxin_2_ac_d_rm?ac_md=1-1-ZWFycGhvbmVzIHdpdGggbWljcm9waG9uZQ%3D%3D-ac_d_rm&crid=VGIC3KOJ997I&keywords=electronics&pd_rd_i=B071Z8M4KX&pd_rd_r=3d15059a-966b-41a8-9d5b-907ad4ad7657&pd_rd_w=3rIUQ&pd_rd_wg=zsqcT&pf_rd_p=8148e8f2-bd39-49c4-8707-37b791903fcb&pf_rd_r=G3SZYBRT64C8GYM290P9&psc=1&qid=1571256221&smid=A14CZOWI0VEHLG&sprefix=electronics%2Caps%2C293 style="
-                style="width:25%;min-height:200px">
-        </div>
-        <div class="w3-twothird w3-container ">
-            <h2>boAt BassHeads 100 in-Ear Headphones
-            </h2>
-            <p>
-                Comes with an amazing commixture of style with performance , Frequency :20Hz - 20KHz , Sensitivity :92db ±3db<br>
-                <br> <br>
-
-                <span class="span-seller ">Special Price:999.00</span><br>
-                <span class="save ">        Deal of the Day:	349.00</span><br>
-
-            </p>
-        </div>
-
-    </div>
-    <div class="w3-row w3-margin ">
-
-        <div class="w3-third ">
-            <img src="data:image/webp;base64,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"
-                style="
-                width:50%;min-height:200px ">
-        </div>
-        <div class="w3-twothird w3-container ">
-            <h2>boAt Stone 200 Portable Bluetooth Speakers (Black)
-            </h2>
-            <p>
-                Boat Stone 200 is waterproof to suit your active, outdoorsy lifestyle<br> The body is constructed of durable rubber matte finish <br><br>
-
-                <span class="span-seller ">Special Price:2,990.00</span><br>
-                <span class="save ">Deal of the Day: 999.00</span> </p>
-        </div>
-
-    </div>
+</div>
