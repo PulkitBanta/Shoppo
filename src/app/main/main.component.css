@@ -1,0 +1,23 @@
+.navbar {
+    /* margin: 0; */
+    /* padding: 0; */
+    border-radius: 0;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+a {
+    color: white !important;
+}
+
+.navbar-inverse {
+    background-color: rgb(32, 122, 70) !important;
+    border: none;
+}
+
+.jumbotron {
+    background-color: rgb(252, 231, 205);
+    margin-bottom: 0;
+}

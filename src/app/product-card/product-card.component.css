@@ -1,0 +1,12 @@
+.panel {
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.panel:hover {
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
