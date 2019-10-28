@@ -11,8 +11,8 @@ import { Product } from '../product/product.model';
 export class ProductBoardComponent {
 
   constructor(private productBoardService: ProductBoardService) { }
-  
-  pro : Product[];
+
+  pro: Product[];
 
   ngOnInit() {
     this.pro = this.productBoardService.getAll();
