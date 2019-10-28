@@ -1,25 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { ElectronicsService } from './electronics.service'
 
 @Component({
   selector: 'app-electronics',
   templateUrl: './electronics.component.html',
   styleUrls: ['./electronics.component.css']
 })
+
 export class ElectronicsComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  constructor(private ElectronicsData: ElectronicsService) { }
   data: any;
 
   ngOnInit() {
-    this.http.get('../../assets/main.json')
-    .subscribe(
-      (data) => {
-        this.data = data;
-      }
-    );
+    this.data = this.ElectronicsData.getAll()
+    // console.log(this.data)
   }
-  
 
   sample = {
     title: null,

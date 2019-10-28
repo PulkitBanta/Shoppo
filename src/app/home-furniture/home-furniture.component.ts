@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HomeFurnitureService } from './home-furniture.service';
 
 @Component({
   selector: 'app-home-furniture',
@@ -7,21 +7,13 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./home-furniture.component.css']
 })
 
-
 export class HomeFurnitureComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  constructor(private HomeFurnitureData: HomeFurnitureService) { }
   data: any;
 
-
-
   ngOnInit() {
-    this.http.get('../../assets/main.json')
-      .subscribe(
-        (data) => {
-          this.data = data;
-        }
-      );
+    this.data = this.HomeFurnitureData.getAll();
   }
 
   sample = {

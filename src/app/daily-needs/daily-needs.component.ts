@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { DailyNeedsService } from './daily-needs.service';
 
 @Component({
   selector: 'app-daily-needs',
@@ -7,21 +7,14 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./daily-needs.component.css']
 })
 
-
 export class DailyNeedsComponent implements OnInit {
 
-  constructor(private http: HttpClient) {
-  }
-
+  constructor(private DailyNeedsData: DailyNeedsService) { }
   data: any;
 
   ngOnInit() {
-    this.http.get('../../assets/main.json')
-      .subscribe(
-        (data) => {
-          this.data = data;
-        }
-      );
+    this.data = this.DailyNeedsData.getAll()
+    // console.log(this.data)
   }
 
   sample = {

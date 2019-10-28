@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-// import { HttpClient } from '@angular/common/http';
 import { ClothesService } from './clothes.service'
 
 @Component({
@@ -7,6 +6,7 @@ import { ClothesService } from './clothes.service'
   templateUrl: './clothes.component.html',
   styleUrls: ['./clothes.component.css']
 })
+
 export class ClothesComponent {
 
   constructor(private ClothesData: ClothesService) { }
