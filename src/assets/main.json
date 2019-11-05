@@ -1,11 +1,11 @@
 {
     "dailyNeeds": [{
-            "title": "Cetaphil Moisturizing Lotion for sensitive or dry skin - Pack of 2  (250 ml)",
+            "title": "Cetaphil Pure Olive Oil - Pack of 2  (250 ml)",
             "price": 1099,
-            "url": "../../assets/lotion.jpeg",
-            "data1": "Application Area: Body",
-            "data2": "For Men",
-            "data3": "Lotion Cream"
+            "url": "../../assets/Olive_oil.jpeg",
+            "data1": "Application Area: Cooking",
+            "data2": "Food, Other Uses",
+            "data3": "Pure Olive Oil"
         },
         {
             "title": "Balaji Calfornia Almonds regular 200 Pack Of 4 Almonds (4 x 200 g)",
@@ -18,7 +18,7 @@
         {
             "title": "Cetaphil Moisturizing Lotion for sensitive or dry skin - Pack of 2  (250 ml)",
             "price": 5249,
-            "url": "../../assets/Olive_oil.jpeg",
+            "url": "../../assets/lotion.jpeg",
             "data1": "Used For: Cooking",
             "data2": "Brand : Colavita",
             "data3": "Quantity : 5L"
