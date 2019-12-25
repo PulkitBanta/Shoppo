@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeFurnitureService } from './home-furniture.service';
+import { MainService } from '../app.service'
 
 @Component({
   selector: 'app-home-furniture',
@@ -9,11 +9,11 @@ import { HomeFurnitureService } from './home-furniture.service';
 
 export class HomeFurnitureComponent implements OnInit {
 
-  constructor(private HomeFurnitureData: HomeFurnitureService) { }
+  constructor(private mainService: MainService) { }
   data: any;
 
   ngOnInit() {
-    this.data = this.HomeFurnitureData.getAll();
+    this.data = this.mainService.getAll()
   }
 
   sample = {

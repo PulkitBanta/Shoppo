@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ElectronicsService } from './electronics.service'
+import { MainService } from '../app.service'
 
 @Component({
   selector: 'app-electronics',
@@ -9,12 +9,11 @@ import { ElectronicsService } from './electronics.service'
 
 export class ElectronicsComponent implements OnInit {
 
-  constructor(private ElectronicsData: ElectronicsService) { }
+  constructor(private mainService: MainService) { }
   data: any;
 
   ngOnInit() {
-    this.data = this.ElectronicsData.getAll()
-    // console.log(this.data)
+    this.data = this.mainService.getAll()
   }
 
   sample = {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DailyNeedsService } from './daily-needs.service';
+import { MainService } from '../app.service'
 
 @Component({
   selector: 'app-daily-needs',
@@ -9,12 +9,11 @@ import { DailyNeedsService } from './daily-needs.service';
 
 export class DailyNeedsComponent implements OnInit {
 
-  constructor(private DailyNeedsData: DailyNeedsService) { }
-  data: any;
+  constructor(private mainService: MainService) { }
+  data;
 
   ngOnInit() {
-    this.data = this.DailyNeedsData.getAll()
-    // console.log(this.data)
+    this.data = this.mainService.getAll()
   }
 
   sample = {

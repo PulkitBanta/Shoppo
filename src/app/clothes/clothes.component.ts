@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ClothesService } from './clothes.service'
+import { MainService } from '../app.service'
 
 @Component({
   selector: 'app-clothes',
@@ -9,12 +9,11 @@ import { ClothesService } from './clothes.service'
 
 export class ClothesComponent {
 
-  constructor(private ClothesData: ClothesService) { }
-  data: any;
+  constructor(private mainService: MainService) { }
+  data;
 
   ngOnInit() {
-    this.data = this.ClothesData.getAll()
-    // console.log(this.data)
+    this.data = this.mainService.getAll()
   }
 
   sample = {

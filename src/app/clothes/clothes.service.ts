@@ -9,16 +9,8 @@ export class ClothesService {
 
   constructor(private http: HttpClient) { }
 
-  data: any
-
   getAll() {
-    this.http.get('../../assets/main.json')
-      .subscribe(
-        (data) => {
-          this.data = data;
-        }
-      );
-    return this.data
+    return this.http.get('../../assets/main.json')
   }
 
 }
