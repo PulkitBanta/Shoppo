@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { cart1 } from '../home-furniture/home-furniture.component';
-import { cart2 } from '../daily-needs/daily-needs.component';
-import { cart3 } from '../clothes/clothes.component';
-import { cart4 } from '../electronics/electronics.component';
+import { MainService } from '../app.service';
 
 @Component({
   selector: 'app-cart',
@@ -11,22 +8,16 @@ import { cart4 } from '../electronics/electronics.component';
 })
 export class CartComponent implements OnInit {
 
-  public scart = []
+  constructor(private mainService: MainService) {}
+
+  products;
 
   ngOnInit() {
-    for (var i = 0; i < cart1.length; i++)
-      this.scart.push(cart1[i])
-    for (var i = 0; i < cart2.length; i++)
-      this.scart.push(cart2[i])
-    for (var i = 0; i < cart3.length; i++)
-      this.scart.push(cart3[i])
-    for (var i = 0; i < cart4.length; i++)
-      this.scart.push(cart4[i])
-    // console.log(this.scart.length)
+    this.products = this.mainService.getProducts();
   }
 
-  // cartLen(){
-  //   return this.scart.length
-  // }
+  clearCart() {
+    this.products = [];
+  }
 
 }

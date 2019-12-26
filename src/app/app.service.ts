@@ -9,11 +9,20 @@ import { Injectable } from '@angular/core';
 export class MainService implements OnInit {
 
   constructor(private http: HttpClient) { }
+  items = [];
 
   ngOnInit() { }
 
   getAll() {
     return this.http.get('./assets/main.json')
+  }
+
+  addToCart(product) {
+    this.items.push(product);
+  }
+
+  getProducts() {
+    return this.items;
   }
 
 }

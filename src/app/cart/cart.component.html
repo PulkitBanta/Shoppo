@@ -1,18 +1,22 @@
 <div class="container-fluid">
-    <div class="row" *ngFor="let a of scart">
+    <div class="row" *ngFor="let product of products">
         <div class="col-sm-1"></div>
         <div class="col-sm-2">
-            <img class="img-responsive" src="{{ a.url }}" height="400px" width="300px">
+            <img class="img-responsive" src="{{ product.url }}" height="400px" width="300px">
         </div>
         <div class="col-sm-1"></div>
         <div class="col-sm-7">
-            <h2>{{ a.title }}</h2>
+            <h2>{{ product.title }}</h2>
             <p class="price-tag">Special Price :-</p>
-            <p class="price">₹{{ a.price }}/- (Free Delivery on First Order)</p>
+            <p class="price">₹{{ product.price }}/- (Free Delivery on First Order)</p>
             <p><span class="span-seller">Seller :</span> <span class="span-seller1">NumBrave</span></p>
         </div>
         <div class="col-sm-1"></div>
     </div>
 
-    <h2 class="center">Total Products: {{scart.length}}</h2>
+    <h2 class="center">Total Products: {{products.length}}</h2>
+
+    <p class="text-center">
+        <button type="button" class="btn btn-danger" (click)="clearCart()">Clear Cart</button>
+    </p>
 </div>
