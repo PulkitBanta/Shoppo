@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MainService } from '../app.service'
+import { MainService } from '../app.service';
+import { FilterPipe } from '../filter.pipe';
 
 @Component({
   selector: 'app-daily-needs',
@@ -11,7 +12,7 @@ export class DailyNeedsComponent implements OnInit {
 
   constructor(private mainService: MainService) { }
   data;
-  products;
+  sort = 'dailyNeeds'
 
   ngOnInit() {
     this.data = this.mainService.getAll()

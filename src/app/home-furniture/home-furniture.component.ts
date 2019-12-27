@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MainService } from '../app.service'
+import { MainService } from '../app.service';
+import { FilterPipe } from '../filter.pipe';
 
 @Component({
   selector: 'app-home-furniture',
@@ -11,6 +12,7 @@ export class HomeFurnitureComponent implements OnInit {
 
   constructor(private mainService: MainService) { }
   data;
+  sort = 'electronics'
 
   ngOnInit() {
     this.data = this.mainService.getAll()

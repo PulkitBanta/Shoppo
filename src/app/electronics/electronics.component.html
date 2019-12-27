@@ -1,5 +1,5 @@
-<div class="row" *ngFor="let a of data | async">
-    <div *ngIf="a.type == 'electronics'">
+<div class="container-fluid">
+    <div class="row" *ngFor="let a of data | async | filter: sort">
         <div class="col-sm-1"></div>
         <div class="col-sm-2">
             <img class="img-responsive" src="{{ a.url }}" height="400px" width="300px">
