@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CartComponent } from '../cart/cart.component'
 
 @Component({
   selector: 'app-main',
@@ -8,7 +7,6 @@ import { CartComponent } from '../cart/cart.component'
 })
 export class MainComponent implements OnInit {
 
-  // public Num = cartLen();
   constructor() { }
 
   ngOnInit() {
