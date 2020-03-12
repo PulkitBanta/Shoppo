@@ -1,32 +1,37 @@
-<div class="jumbotron">
-    <div class="container text-center">
-        <h1>Shoppo</h1>
-        <p>Welcome to Best Shopping Website</p>
-    </div>
-</div>
+<nav class="navbar is-success" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item">
+            Shoppo
+        </a>
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-            <a class="navbar-brand" routerLink="">SHOPPO</a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item">
+                Home
+            </a>
+            <a class="navbar-item">
+                Documentation
+            </a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><a routerLink="/electronics">ELECTRONICS</a></li>
-                <li><a routerLink="/clothes">CLOTHES</a></li>
-                <li><a routerLink="/dailyneeds">DAILY NEED</a></li>
-                <li><a routerLink="/homefurniture">FURNITURE</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a routerLink="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                <li><a routerLink="/cart"><span class="glyphicon glyphicon-shopping-cart"></span>Cart&nbsp;&nbsp;&nbsp;</a></li>
-            </ul>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary">
+                        <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light">
+                        Log in
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </nav>

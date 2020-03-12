@@ -25,6 +25,7 @@
                             { "glob": "main.json", "input": "./", "output": "./assets/" }
                         ],
                         "styles": [
+                            "./node_modules/bulma/css/bulma.css",
                             "src/styles.css"
                         ],
                         "scripts": []
