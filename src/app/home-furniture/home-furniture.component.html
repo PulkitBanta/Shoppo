@@ -1,29 +1,19 @@
-<div class="container-fluid">
-    <div class="row" *ngFor="let a of data | async | filter: sort">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-2">
-            <img class="img-responsive" src="{{ a.url }}" height="400px" width="300px">
-        </div>
-        <div class="col-sm-1"></div>
-        <div class="col-sm-7">
-            <h2>{{ a.title }}</h2>
-            <p class="price-tag">Special Price :-</p>
-            <p class="price">₹{{ a.price }}/- (Free Delivery on First Order)</p>
-            <p class="tax">(Inclusive of all Taxes)</p>
-            <p class="Stock">In Stock</p>
-            <div>
-                <p class="Highlights">Highlights : </p>
-                <ul type="disc">
-                    <li>{{ a.data1 }}</li>
-                    <li>{{ a.data2 }}</li>
-                    <li>{{ a.data3 }}</li>
-                </ul>
-            </div>
-            <p><span class="span-seller">Seller :</span> <span class="span-seller1">NumBrave</span></p>
-            <button class="btn btn-success" (click)="add(a)">
-                Add to cart
-            </button>
-        </div>
-        <div class="col-sm-1"></div>
-    </div>
+<div class="container">
+  <div class="row m-5 justify-content-center" *ngFor="let a of data | async | filter: sort">
+      <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+              <div class="col-md-4 align-items-center">
+                  <img class="card-img-top" src="{{ a.url }}" alt="Card image">
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                      <h5 class="card-title">{{ a.title }}</h5>
+                      <p class="card-text">Consequat voluptate ea quis et commodo. Consectetur aliquip exercitation officia ea aute. Laborum labore voluptate non enim. Ipsum officia exercitation exercitation qui enim id eu qui eu. Laborum sint duis amet consequat officia
+                          consectetur ea pariatur. Eiusmod enim ipsum quis enim et sunt duis occaecat nostrud non quis. Et ullamco nostrud exercitation esse commodo ullamco mollit ut incididunt nulla mollit magna consequat.</p>
+                      <p class="card-text"><small class="text-muted">{{ a.price }}</small></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
