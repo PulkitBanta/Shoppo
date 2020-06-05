@@ -11,7 +11,7 @@ export class MainService {
   items = [];
 
   getAll() {
-    return this.http.get('./assets/main.json')
+    return this.http.get('./assets/products.json')
   }
 
   addToCart(product) {

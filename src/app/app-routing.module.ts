@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductBoardComponent } from './product-board/product-board.component';
-import { ProductComponent } from './product/product.component';
 import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
@@ -33,7 +32,7 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 // Making array of the components
-export const routingComponents = [MainComponent, ProductComponent,
+export const routingComponents = [MainComponent,
  ProductCardComponent, ProductBoardComponent, FooterComponent,
  SlideshowComponent, DailyNeedsComponent, HomeFurnitureComponent, 
  LoginComponent, SignupComponent, ElectronicsComponent, ClothesComponent, CartComponent]

@@ -12,10 +12,10 @@ export class ProductBoardComponent {
 
   constructor(private productBoardService: ProductBoardService) { }
 
-  pro: Product[];
+  products: Product[];
 
   ngOnInit() {
-    this.pro = this.productBoardService.getAll();
+    this.products = this.productBoardService.getAll();
   }
 
 }

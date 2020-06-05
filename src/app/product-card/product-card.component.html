@@ -1,5 +1,8 @@
-<div class="panel panel-primary" routerLink="{{ product.link }}">
-    <div class="panel-body"><img class="img-responsive" src="{{product.imageUrl}}"></div>
-    <div class="panel-footer center">{{ product.title }}
+<div routerLink="{{ product.link }}">
+  <div class="card">
+    <img class="card-img-top" src="{{ product.imageUrl }}" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title text-center">{{ product.title }}</h4>
     </div>
+  </div>
 </div>

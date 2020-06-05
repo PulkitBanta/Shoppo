@@ -12,7 +12,7 @@ export class ProductBoardService {
         this.add("Electronics", '../../assets/electronics.jpg', '/electronics')
         this.add("Clothes", '../../assets/clothes.jpg', '/clothes')
         this.add("Daily Need", '../../assets/dailyNeed.jpg', '/dailyneeds')
-        this.add("Furniture", '../../assets/furniture.jpg', '/homefurniture')
+        this.add("Furniture", '../../assets/furniture.jpg', '/furniture')
     }
 
     add(title: string, imgUrl: string, link: string) {

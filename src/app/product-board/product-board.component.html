@@ -1,7 +1,7 @@
 <app-slideshow></app-slideshow>
 
 <div class="row">
-    <div class="col-sm-3 center" *ngFor="let p of pro">
-        <app-product-card [product]=p></app-product-card>
+    <div class="col-md-3" *ngFor="let product of products">
+        <app-product-card [product]=product></app-product-card>
     </div>
 </div>
