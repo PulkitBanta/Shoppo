@@ -118,7 +118,7 @@
     {
         "title": "Flipkart Perfect Homes Rhapsody Engineered Wood King Box Bed  (Finish Color - Wenge)",
         "price": 15999,
-        "type": "homeFurniture",
+        "type": "furniture",
         "url": "../../assets/Bed.jpeg",
         "data1": "Material Subtype: Particle Board",
         "data2": "6-way Moisture Protection",
@@ -127,7 +127,7 @@
     {
         "title": "Balaji Sheesham Wood Solid Wood 2 Seater Dining Set  (Finish Color - Provincial Teak)",
         "price": 27190,
-        "type": "homeFurniture",
+        "type": "furniture",
         "url": "../../assets/Dining-set.jpeg",
         "data1": "Table Top Material: Solid Wood",
         "data2": "Chair Frame: Solid Wood",
@@ -136,7 +136,7 @@
     {
         "title": "BIG BANG CREATIONS Analog 60 cm X 60 cm Wall Clock  (Blue, With Glass)",
         "price": 2969,
-        "type": "homeFurniture",
+        "type": "furniture",
         "url": "../../assets/Clock.jpeg",
         "data1": "Size: 60 cm x 60 cm",
         "data2": "Mechanism: Quartz",
@@ -145,7 +145,7 @@
     {
         "title": "Home Sizzler 214 cm (7 ft) Polyester Door Curtain (Pack Of 2)  (Floral, Brown)",
         "price": 499,
-        "type": "homeFurniture",
+        "type": "furniture",
         "url": "../../assets/Curtain.jpeg",
         "data1": "Door (115 cm x 214 cm)",
         "data2": "Material: Polyester",
@@ -154,7 +154,7 @@
     {
         "title": "DZYN Furnitures Leatherette Office Executive Chair  (Black, Set of 2)",
         "price": 9090,
-        "type": "homeFurniture",
+        "type": "furniture",
         "url": "../../assets/Chair.jpeg",
         "data1": "Adjustable Seat Height",
         "data2": "Frame Material: Metal",

@@ -12,7 +12,7 @@ export class HomeFurnitureComponent implements OnInit {
 
   constructor(private mainService: MainService) { }
   data;
-  sort = 'electronics'
+  sort = 'furniture'
 
   ngOnInit() {
     this.data = this.mainService.getAll()
