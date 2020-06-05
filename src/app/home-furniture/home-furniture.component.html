@@ -1,19 +1,19 @@
 <div class="container">
-  <div class="row m-5 justify-content-center" *ngFor="let a of data | async | filter: sort">
-      <div class="card mb-3" style="max-width: 540px;">
-          <div class="row no-gutters">
-              <div class="col-md-4 align-items-center">
-                  <img class="card-img-top" src="{{ a.url }}" alt="Card image">
-              </div>
-              <div class="col-md-8">
-                  <div class="card-body">
-                      <h5 class="card-title">{{ a.title }}</h5>
-                      <p class="card-text">Consequat voluptate ea quis et commodo. Consectetur aliquip exercitation officia ea aute. Laborum labore voluptate non enim. Ipsum officia exercitation exercitation qui enim id eu qui eu. Laborum sint duis amet consequat officia
-                          consectetur ea pariatur. Eiusmod enim ipsum quis enim et sunt duis occaecat nostrud non quis. Et ullamco nostrud exercitation esse commodo ullamco mollit ut incididunt nulla mollit magna consequat.</p>
-                      <p class="card-text"><small class="text-muted">{{ a.price }}</small></p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+    <div class="row m-5 justify-content-center" *ngFor="let a of data | async | filter: sort">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4 align-items-center">
+                    <img class="card-img-top" src="{{ a.url }}" alt="Card image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ a.title }}</h5>
+                        <p class="card-text">Consequat voluptate ea quis et commodo. Consectetur aliquip exercitation officia ea aute. Laborum labore voluptate non enim. Ipsum officia exercitation exercitation qui enim id eu qui eu. Laborum sint duis amet consequat officia
+                            consectetur ea pariatur. Eiusmod enim ipsum quis enim et sunt duis occaecat nostrud non quis. Et ullamco nostrud exercitation esse commodo ullamco mollit ut incididunt nulla mollit magna consequat.</p>
+                        <p class="card-text"><small class="text-muted"><strong>Price : ₹{{ a.price }}</strong></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
