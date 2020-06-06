@@ -2,6 +2,10 @@
 
 Shoppo is an Open Source E-Commerce template based on Angular and Bootstrap.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ce0b1376-c280-462a-9a67-1f055599c32c/deploy-status)](https://app.netlify.com/sites/shoppo/deploys)
+
+View Live -- [Shoppo](https://shoppo.netlify.app/)
+
 ## Getting Started 🚀
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
