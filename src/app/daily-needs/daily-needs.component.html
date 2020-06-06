@@ -1,11 +1,11 @@
 <div class="container">
-    <div class="row m-5 justify-content-center" *ngFor="let product of products | async | filter: sort">
-        <div class="card mb-3" style="max-width: 540px;">
+    <div class="row m-5 justify-content-center">
+        <div class="card mb-3 col-lg-5 m-1" *ngFor="let product of products | async | filter: sort" style="max-width: 540px;">
             <div class="row no-gutters">
-                <div class="col-md-4">
+                <div class="col-lg-4 d-flex align-items-center">
                     <img class="card-img-top" src="{{ product.url }}" alt="Card image">
                 </div>
-                <div class="col-md-8">
+                <div class="col-lg-8">
                     <div class="card-body">
                         <h5 class="card-title">{{ product.title }}</h5>
                         <p class="card-text">Consequat voluptate ea quis et commodo. Consectetur aliquip exercitation officia ea aute. Laborum labore voluptate non enim. Ipsum officia exercitation exercitation qui enim id eu qui eu. Laborum sint duis amet consequat officia
