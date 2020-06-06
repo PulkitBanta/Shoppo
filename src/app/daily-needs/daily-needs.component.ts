@@ -10,15 +10,14 @@ import { MainService } from '../app.service';
 export class DailyNeedsComponent implements OnInit {
 
   constructor(private mainService: MainService) { }
-  data;
+  products;
   sort = 'dailyNeeds'
 
   ngOnInit() {
-    this.data = this.mainService.getAll()
+    this.products = this.mainService.getAll()
   }
 
-  add(a){
-    this.mainService.addToCart(a)
+  add(product) {
+    this.mainService.addToCart(product)
   }
-
 }
