@@ -1,11 +1,11 @@
 <div class="row justify-content-center">
     <div class="card my-3 col-md-6" *ngFor="let product of products | async | filter: sort" style="max-width: 540px;">
         <div class="row no-gutters">
-            <div class="col-lg-4 d-flex align-items-center">
+            <div class="col-lg-4 d-flex align-items-center justify-content-center">
                 <img class="card-img-top img-fluid" src="{{ product.url }}" alt="Card image">
             </div>
             <div class="col-lg-8">
-                <div class="card-body">
+                <div class="card-body text-center">
                     <h5 class="card-title">{{ product.title }}</h5>
                     <p class="card-text">Ea Lorem eiusmod commodo in consectetur anim reprehenderit sit reprehenderit.</p>
                     <p class="card-text"><small class="text-muted"><strong>Price : ₹{{ product.price }}</strong></small></p>
