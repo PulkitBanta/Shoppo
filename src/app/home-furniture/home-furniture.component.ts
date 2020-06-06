@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MainService } from '../app.service';
-import { FilterPipe } from '../filter.pipe';
 
 @Component({
   selector: 'app-home-furniture',
@@ -23,5 +22,3 @@ export class HomeFurnitureComponent implements OnInit {
   }
 
 }
-
-export var cart1 = []

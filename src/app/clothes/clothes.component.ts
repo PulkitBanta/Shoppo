@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { MainService } from '../app.service';
-import { FilterPipe } from '../filter.pipe';
 
 @Component({
   selector: 'app-clothes',
@@ -22,4 +21,3 @@ export class ClothesComponent {
     this.mainService.addToCart(a)
   }
 }
-export var cart3 = []
