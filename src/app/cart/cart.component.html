@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="card mb-3 m-2 col-md-4" style="max-width: 400px;" *ngFor="let product of products; i as index">
+        <div class="card my-3 m-2 col-md-4" style="max-width: 400px;" *ngFor="let product of products; index as i;">
             <div class="row no-gutters">
                 <div class="col-md-4 align-items-center">
                     <img class="card-img-top" src="{{ product.url }}" alt="Card image">
@@ -16,9 +16,14 @@
         </div>
     </div>
 
-    <h2 class="center">Total Products: {{products.length}}</h2>
-
-    <p class="text-center">
+    
+    <div class="text-center" *ngIf="products.length > 0">
+        <h2 class="center">Total Products: {{products.length}}</h2>
         <button type="button" class="btn btn-danger" (click)="clearCart()">Clear Cart</button>
-    </p>
+    </div>
+
+    <div class="text-center m-5 text-black-50" *ngIf="products.length == 0">
+        <p class="m-5"><i class="fa fa-shopping-cart fa-5x"></i></p>
+        <h3 class="font-weight-bolder">Your cart feels too light!</h3>
+    </div>
 </div>
