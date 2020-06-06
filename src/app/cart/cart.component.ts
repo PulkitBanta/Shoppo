@@ -13,11 +13,20 @@ export class CartComponent implements OnInit {
   products;
 
   ngOnInit() {
+    this.getProducts();
+  }
+
+  getProducts() {
     this.products = this.mainService.getProducts();
   }
 
   clearCart() {
     this.products = [];
+  }
+
+  remove(i) {
+    this.mainService.remove(i);
+    this.getProducts();
   }
 
 }

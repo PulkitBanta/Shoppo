@@ -9,6 +9,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ product.title }}</h5>
                         <p class="card-text"><small class="text-muted"><strong>Price: ₹{{ product.price }}</strong></small></p>
+                        <button class="btn btn-danger" (click)="remove(i)">Remove</button>
                     </div>
                 </div>
             </div>

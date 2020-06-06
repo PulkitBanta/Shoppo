@@ -22,4 +22,8 @@ export class MainService {
     return this.items;
   }
 
+  remove(index) {
+    this.items.splice(index, 1);
+  }
+
 }
