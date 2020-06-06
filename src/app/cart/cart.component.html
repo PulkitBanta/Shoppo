@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="card mb-3 m-2 col-md-4" style="max-width: 400px;" *ngFor="let product of products">
+        <div class="card mb-3 m-2 col-md-4" style="max-width: 400px;" *ngFor="let product of products; i as index">
             <div class="row no-gutters">
                 <div class="col-md-4 align-items-center">
                     <img class="card-img-top" src="{{ product.url }}" alt="Card image">
@@ -8,7 +8,7 @@
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title">{{ product.title }}</h5>
-                        <p class="card-text"><small class="text-muted"><strong>{{ product.price }}</strong></small></p>
+                        <p class="card-text"><small class="text-muted"><strong>Price: ₹{{ product.price }}</strong></small></p>
                     </div>
                 </div>
             </div>
