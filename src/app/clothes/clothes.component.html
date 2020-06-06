@@ -1,17 +1,15 @@
-<div class="container">
-    <div class="row m-5 justify-content-center">
-        <div class="card mb-3 col-lg-5 m-1" *ngFor="let product of products | async | filter: sort" style="max-width: 540px;">
-            <div class="row no-gutters">
-                <div class="col-lg-4 d-flex align-items-center">
-                    <img class="card-img-top" src="{{ product.url }}" alt="Card image">
-                </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ product.title }}</h5>
-                        <p class="card-text">Ea Lorem eiusmod commodo in consectetur anim reprehenderit sit reprehenderit.</p>
-                        <p class="card-text"><small class="text-muted"><strong>Price : ₹{{ product.price }}</strong></small></p>
-                        <button class="btn btn-success" (click)="add(product)">Add to Cart</button>
-                    </div>
+<div class="row justify-content-center">
+    <div class="card my-3 col-md-6" *ngFor="let product of products | async | filter: sort" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-lg-4 d-flex align-items-center">
+                <img class="card-img-top img-fluid" src="{{ product.url }}" alt="Card image">
+            </div>
+            <div class="col-lg-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.title }}</h5>
+                    <p class="card-text">Ea Lorem eiusmod commodo in consectetur anim reprehenderit sit reprehenderit.</p>
+                    <p class="card-text"><small class="text-muted"><strong>Price : ₹{{ product.price }}</strong></small></p>
+                    <button class="btn btn-success" (click)="add(product)">Add to Cart</button>
                 </div>
             </div>
         </div>
