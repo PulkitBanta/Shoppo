@@ -1,16 +1,16 @@
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 480px) {
-    img {
-      max-width: 30%;
-    }
+  img {
+    max-width: 30%;
+  }
 }
 
-@media screen and (min-width: 480px) and (max-width: 992px) {
-    img {
-      max-width: 50%;
-    }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  img {
+    max-width: 40%;
+  }
 }

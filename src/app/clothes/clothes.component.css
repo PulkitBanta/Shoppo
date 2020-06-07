@@ -9,8 +9,8 @@ img {
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 992px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
     img {
-      max-width: 50%;
+      max-width: 40%;
     }
 }
