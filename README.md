@@ -1,6 +1,6 @@
 <h1 align="center">SHOPPO</h1>
 
-Shoppo is an Open Source E-Commerce template based on Angular and Bootstrap.
+An online responsive e-commerce website with easy client side products management.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ce0b1376-c280-462a-9a67-1f055599c32c/deploy-status)](https://app.netlify.com/sites/shoppo/deploys)
 
@@ -59,10 +59,12 @@ $ npm start
 
 Currently not accepting any contributions.
 
-## Authors
+## Contributors
+
 | [![Pulkit Banta](https://github.com/PulkitBanta.png?size=100)](https://github.com/PulkitBanta) |
 | --- |
 | [Pulkit Banta](https://github.com/PulkitBanta) |
+| <p align="center"><a title="code">💻</a> <a title="designing">🎨</a> <a title="documentation">📖</a></p>
 
 ## License
 
